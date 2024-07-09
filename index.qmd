@@ -1,24 +1,32 @@
 ---
-title: "IPBES_App22"
+title: "IPBES Appendix 2.2 Reconstruction"
+format: 
+  html:
+    css: styles.css
+    pdf: default
+editor: visual
 ---
 
-This is a Quarto website.
+This is the Quarto project to redo the indicator analysis of the IPBES Appendix 2.2 (insert reference here). This is a private project; IPBES takes no responsibility for its content.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+This project requires the following packages:
 
 ```{r}
-1 + 1
+library(ipbesIApackage)
+library(kableExtra)
+library(knitr)
+
 ```
 
-Install Package
+## Summary of indicators
 
-```{r}
-# Install the package if not already installed 
-if (!requireNamespace("ipbesIApackage", quietly = TRUE)) {devtools::install_local("ipbesIApackage") }
-```
+In the following a brief overview of the indicators used so far will be given by Table 1.
 
-Test Hello World function of internal package
+```{r, echo=FALSE}
+#Loading table1 data from ipbesIApackage/inst/ext/ and rendering directly in document
+load_summary_of_indicators()%>%
+  kbl(escape = FALSE, caption="Table 1: Summary of indicators used in this synthesis organised alphabetically within EBV class (and, where relevant, EBV scale). Core/Highlight/Other denotes the Knowledge & Data TSU’s evaluation of each indicator. Whole or Part of indicator denotes whether the row of the table refers to an overall indicator (e.g., Red List Index) or a subset (e.g., Red List Index of pollinators).") %>% 
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
+  row_spec(0, extra_css = "height: 180px; transform-origin: left", angle=-45)
 
-```{r}
-ipbesIApackage::hello()
 ```

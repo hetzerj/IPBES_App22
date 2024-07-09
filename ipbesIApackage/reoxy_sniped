@@ -1,0 +1,8 @@
+# Load roxygen2
+library(roxygen2)
+
+# Set the path to your package directory
+pkg_dir <- "/home/data3/Desktop/IPBES_git/IPBES_App22/ipbesIApackage"
+
+# Generate documentation
+roxygen2::roxygenize(pkg_dir)

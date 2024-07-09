@@ -1,1 +1,22 @@
 /* css styles */
+
+th.rotate {
+  height: 150px;
+  white-space: nowrap;
+  vertical-align: bottom;
+  position: relative;
+}
+
+th.rotate > div {
+  transform: rotate(-90deg);
+  width: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  text-align: left;
+}
+
+/* Ensuring all columns have equal width */
+td, th {
+  width: 2cm;
+}

@@ -2,7 +2,7 @@
 
 #' Hello World function for testing
 #'
-#' @return
+#' @return prints "Hello world" in console
 #' @export
 #'
 #' @examples

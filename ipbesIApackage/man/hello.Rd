@@ -6,6 +6,9 @@
 \usage{
 hello()
 }
+\value{
+prints "Hello world" in console
+}
 \description{
 Hello World function for testing
 }
