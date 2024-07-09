@@ -1,0 +1,21 @@
+project:
+  type: website
+
+website:
+  title: "IPBES_App22"
+  navbar:
+    left:
+      - text: Home
+        href: index.qmd
+      - text: About
+        href: about.qmd
+      - text: Documentation
+        href: ipbesIApackage/docs/index.html
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: visual

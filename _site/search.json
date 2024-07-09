@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "IPBES_App22",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2\n\n\nInstall Package\n\n# Install the package if not already installed \nif (!requireNamespace(\"ipbesIApackage\", quietly = TRUE)) {devtools::install_local(\"ipbesIApackage\") }\n\nTest Hello World function of internal package\n\nipbesIApackage::hello()\n\n[1] \"Hello, world!\""
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  }
+]
